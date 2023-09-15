@@ -24,7 +24,7 @@ public class Pikachu extends Pokemon implements Electric {
     }
 
     @Override
-    public Class[] Weakness() {
+    public Class<?>[] Weakness() {
         return new Class[] {Ground.class};
     }
 }

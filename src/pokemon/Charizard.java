@@ -25,7 +25,7 @@ public class Charizard extends Pokemon implements Fire, Flying {
     }
 
     @Override
-    public Class[] Weakness() {
+    public Class<?>[] Weakness() {
         return new Class[]{Rock.class, Electric.class, Water.class  };
     }
 

@@ -3,13 +3,15 @@ import pokemon.*;
 public class Program {
 
     private static int damage (Pokemon f1, Pokemon f2){
-        Class[] interfaces1 = f1.getClass().getInterfaces();
-        Class[] weakness2 = f2.Weakness();
+        Class<?>[] interfaces1 = f1.getClass().getInterfaces();
+        Class<?>[] weakness2 = f2.Weakness();
         int dmg = 0;
-        for (Class interface1 : interfaces1) {
-            for (Class weaknes2 : weakness2)
-                if (interface1.equals(weaknes2))
+        for (Class<?> interface1 : interfaces1) {
+            for (Class<?> weaknes2 : weakness2) {
+                if (interface1.equals(weaknes2)) {
                     dmg++;
+                }
+            }
         }
         return dmg;
     }

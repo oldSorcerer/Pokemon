@@ -25,7 +25,7 @@ public class Bulbasaur extends Pokemon implements Grass, Poison {
     }
 
     @Override
-    public Class[] Weakness() {
+    public Class<?>[] Weakness() {
         return new Class[] { Flying.class, Fire.class, Psychic.class, Ice.class};
     }
 }

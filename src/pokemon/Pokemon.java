@@ -10,7 +10,7 @@ public abstract class Pokemon {
 
     public abstract Pokemon evolution();
 
-    public abstract Class[] Weakness();
+    public abstract Class<?>[] Weakness();
 
 }
 

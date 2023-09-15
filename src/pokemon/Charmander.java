@@ -24,7 +24,7 @@ public class Charmander extends Pokemon implements Fire {
     }
 
     @Override
-    public Class[] Weakness() {
+    public Class<?>[] Weakness() {
         return new Class[]{Ground.class, Rock.class, Water.class };
     }
 }
